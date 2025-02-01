@@ -1,4 +1,4 @@
-import { FaCheckCircle, FaCheckDouble, FaCircle } from "react-icons/fa";
+import {  FaCheckDouble, FaCircle } from "react-icons/fa";
 
 const OrderList = () => {
   return (
@@ -20,8 +20,8 @@ const OrderList = () => {
           </h1>
         </div>
 
-        <div className="flex flex-col items-start gap-2">
-          <p className="text-green-600 px-4">
+        <div className="flex flex-col items-end gap-2">
+          <p className="text-green-600 ">
             <FaCheckDouble className="inline mr-2" /> Ready
           </p>
           <p className="text-[#ababab] text-sm">

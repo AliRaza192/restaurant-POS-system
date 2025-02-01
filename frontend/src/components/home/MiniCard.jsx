@@ -1,4 +1,3 @@
-
 const MiniCard = ({ title, icons, number, footerNum }) => {
   return (
     <div className="bg-[#1a1a1a] py-5 px-5 rounded-lg w-[50%]">
@@ -15,7 +14,9 @@ const MiniCard = ({ title, icons, number, footerNum }) => {
         </button>
       </div>
       <div>
-        <h1 className="text-[#f5f5f5] text-4xl font-bold mt-5">{number}</h1>
+        <h1 className="text-[#f5f5f5] text-4xl font-bold mt-5">
+          {title === "Total Earnings" ? `Rs${number}` : number}
+        </h1>
         <h1 className="text-[#f5f5f5] text-lg mt-2">
           <span className="text-[#02ca3a]">{footerNum}%</span> then yesterday
         </h1>
