@@ -40,6 +40,7 @@ const Tables = () => {
           return (
             <TableCard
               key={table.id}
+              id={table.id}
               name={table.name}
               status={table.status}
               initial={table.initial}

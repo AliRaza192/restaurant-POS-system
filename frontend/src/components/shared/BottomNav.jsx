@@ -101,7 +101,7 @@ const BottomNav = () => {
           >
             Guest
           </label>
-          <div className="flex items-center justify-between bg-[#1f1f1f px-4 py-3 rounded-lg]">
+          <div className="flex items-center justify-between bg-[#1f1f1f] px-4 py-3 rounded-lg]">
             <button
               onClick={decrementGuest}
               className="text-yellow-500 text-2xl cursor-pointer"
