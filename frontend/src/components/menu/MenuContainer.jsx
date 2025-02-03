@@ -1,6 +1,7 @@
 import { GrRadialSelected } from "react-icons/gr";
 import { menus } from "../../constants";
 import { useState } from "react";
+import { FaShoppingCart } from "react-icons/fa";
 
 const MenuContainer = () => {
   const [selectefMenu, setSelectedMenu] = useState(menus[0]);
@@ -30,11 +31,10 @@ const MenuContainer = () => {
               className="flex flex-col items-center justify-between p-4 rounded-lg h-[100px] cursor-pointer"
               style={{ backgroundColor: menu.bgColor }}
               onClick={() => {
-                setSelectedMenu(menu)
-                setItemId(0)
-                setItemsCountCount(0)
+                setSelectedMenu(menu);
+                setItemId(0);
+                setItemsCountCount(0);
               }}
-
             >
               <div className="flex items-center justify-between w-full">
                 <h1 className="text-[#f5f5f5] text-lg font-semibold">
@@ -61,9 +61,14 @@ const MenuContainer = () => {
               key={menu.id}
               className="flex flex-col items-start justify-between p-4 rounded-lg h-[150px] cursor-pointer hover:bg-[#2a2a2a] bg-[#1a1a1a]"
             >
-              <h1 className="text-[#f5f5f5] text-lg font-semibold">
-                {menu.name}
-              </h1>
+              <div className="flex items-start justify-between w-full">
+                <h1 className="text-[#f5f5f5] text-lg font-semibold">
+                  {menu.name}
+                </h1>
+                <button className="bg-[#2e4e40] text-[#02ca3a] cursor-pointer p-2 rounded-lg">
+                  <FaShoppingCart size={20} />
+                </button>
+              </div>
               <div className="flex items-center justify-between w-full">
                 <p className="text-[#ababab] text-lg font-bold">
                   Rs: {menu.price}

@@ -1,6 +1,10 @@
 import { MdRestaurantMenu } from "react-icons/md";
+
 import BackButton from "../components/shared/BackButton";
 import MenuContainer from "../components/menu/MenuContainer";
+import CustomerInfo from "../components/menu/CustomerInfo";
+import CardItems from "../components/menu/CardItems";
+import Bill from "../components/menu/Bill";
 
 const Menu = () => {
   return (
@@ -31,7 +35,18 @@ const Menu = () => {
       </div>
 
       {/* Right Side */}
-      <div className="flex-[1]  bg-blue-400"></div>
+      <div className="flex-[1]  bg-[#1a1a1a] mt-4 mr-3 h-[780px] rounded-lg pt-2">
+        {/* Customer Info */}
+        <CustomerInfo />
+        <hr className="border-[#2a2a2a] border-t-2" />
+
+        {/* Card Items */}
+        <CardItems />
+        <hr className="border-[#2a2a2a] border-t-2" />
+
+        {/* Bill */}
+        <Bill />
+      </div>
     </section>
   );
 };
